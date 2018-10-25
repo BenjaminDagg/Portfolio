@@ -1,0 +1,32 @@
+#SideMenu {
+    position: absolute;
+    left: 0;
+    top: 200px;
+    height: 700px;
+    width: 20%;
+    margin: 5px;
+
+}
+
+.menu-btn-main {
+    width: 100%;
+    height: 30px;
+    font-weight: bold;
+    background-color:white;
+
+}
+
+.submenu {
+    width: 100%;
+    background-color:lightgray;
+
+}
+
+.menu-btn-sub {
+    width: 100%;
+    height: 30px;
+    background-color:lightgray;
+    text-align: left;
+    border: none;
+
+}

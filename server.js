@@ -1,8 +1,9 @@
 var express = require("express");
 var app = require('express')();
+var path = require("path");
 
 //deployment only
-var http = require('http').Server(app);
+//var http = require('http').Server(app);
 
 var cors = require('cors');
 app.use(cors());
@@ -14,7 +15,7 @@ app.get('*', (req, res)=>{
 });
 
 //dev
-//app.listen(process.env.PORT || 8080 ,() => console.log('server listening'));
+app.listen(process.env.PORT || 8080 ,() => console.log('server listening'));
 
 //deployment
-http.listen(process.env.PORT || 8080 ,() => console.log('server listening'));
+//http.listen(process.env.PORT || 8080 ,() => console.log('server listening'));
