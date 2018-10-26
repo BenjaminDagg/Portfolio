@@ -4,6 +4,7 @@ import Avatar from '@material-ui/core/Avatar';
 import classNames from 'classnames';
 import {ContactLinks} from "../ContactLinks/ContactLinks";
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
+import {AboutPage} from "../AboutPage/AboutPage";
 
 import {Header} from "../Header/Header";
 
@@ -13,8 +14,8 @@ export class Content extends Component {
             <div id="MainContent">
                 <Router>
                     <div>
-                        <Route path="/about/education" component={ContactLinks}/>
-                        <Route path="/about/technology" component={Header}/>
+                        <Route path="/about" component={AboutPage}/>
+
                     </div>
                 </Router>
             </div>

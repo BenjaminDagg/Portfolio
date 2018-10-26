@@ -1,0 +1,45 @@
+.tech-slider {
+    height: 75px;
+    width: 400px;
+
+}
+
+.tech-slider-title {
+    position:relative;
+    width: 30%;
+    left: 0;
+    float:left;
+    text-align: left;
+    font-weight: bold;
+    top: 20px;
+}
+
+.slider-container {
+    position:relative;
+    width: 70%;
+    float:right;
+    height: 100%;
+}
+
+.beg-span {
+    position:absolute;
+    top: 0;
+    left: 0;
+    color: lightgrey;
+}
+
+.exp-span {
+    position:absolute;
+    top:0;
+    right: 0;
+    color:lightgrey;
+}
+
+.tech-input {
+    position:absolute;
+    top: 20px;
+    width: 90%;
+    background: #d3d3d3;
+    outline: none;
+    border-radius: 5px;
+}

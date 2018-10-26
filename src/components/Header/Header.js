@@ -12,6 +12,7 @@ export class Header extends Component {
                     <Avatar id="profile_img" alt="Ben Dagg" src={require("../../images/profile_img.webp")} />
 
                 </div>
+                <h3 id="name-header">Benjamin Dagg</h3>
                 <div id="header-links">
                     <ContactLinks/>
                 </div>
