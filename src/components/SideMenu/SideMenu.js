@@ -68,7 +68,9 @@ export class SideMenu extends Component {
                     <button onClick={this.togglePrtfolioMenu} className="menu-btn-main">Portfolio</button>
                     {this.state.portfolioIsOpen &&
                         <div id="about-submenu" className="submenu">
-                            <button className="menu-btn-sub">Websites</button>
+                            <a href={"/portfolio/web"}>
+                                <button className="menu-btn-sub">Websites</button>
+                            </a>
                             <button className="menu-btn-sub">Other</button>
 
                         </div>

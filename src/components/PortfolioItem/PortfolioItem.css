@@ -1,0 +1,45 @@
+.portfolio-item {
+    height: 400px;
+    width: 600px;
+    position: relative;
+
+
+}
+
+.item-img {
+    position:relative;
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+}
+
+.item-info {
+    width: 100%;
+    height: 200px;
+
+}
+
+.description {
+    position:relative;
+    float:left;
+    width: 50%;
+    text-align: left;
+}
+
+
+
+.portf-title {
+    text-align: left;
+}
+
+.chip-container {
+
+    width: 100%;
+
+}
+
+.portfolio-item a {
+    text-decoration: none;
+    color: black;
+}

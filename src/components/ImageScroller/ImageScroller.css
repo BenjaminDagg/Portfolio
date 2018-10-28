@@ -1,0 +1,31 @@
+.scrollable-image {
+    position:relative;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#prev-btn {
+    position:absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#next-btn {
+    position:absolute;
+    right:0;
+    bottom: 0;
+}
+
+.scroll-btn {
+    width: 60px;
+    height: 30px;
+    background-color: #3c5375;
+    color:white;
+    border:1px solid #3c5375;
+    border-radius: 8px;
+}
+
+.image-scroller {
+    position:relative;
+    width:100%;
+}
