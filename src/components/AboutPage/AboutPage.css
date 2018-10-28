@@ -10,6 +10,12 @@
     float: left;
     text-align: left;
     margin-top: 50px;
+    width: 100%;
+
+}
+
+#work ul {
+    width: 50%;
 }
 
 #edu {
@@ -34,10 +40,6 @@
     height:200px;
 }
 
-#work {
-    width: 60%;
-}
-
 
 
 .tech-info {
@@ -45,9 +47,3 @@
     text-align: left;
 }
 
-#tech {
-    position: absolute;
-    width: 30%;
-    right: 40px;
-    top: 0;
-}
