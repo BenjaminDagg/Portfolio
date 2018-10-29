@@ -1,6 +1,7 @@
 export const portfolio_items = [
     {
         id:1,
+        type:'web',
         title: 'Better Youtube',
         desc: 'Better Youtube is my attempt to recreate Youtube using Google\'s YouTube API while adding some quality of life features.' +
             ' These added features include more accurate like/dislike and viewer counts,' +
@@ -12,6 +13,7 @@ export const portfolio_items = [
     },
     {
         id:2,
+        type:'web',
         title: 'Draw With Me',
         desc: 'Draw With Me is a website to draw and' +
             'chat with your friends in real time. Using' +
@@ -26,6 +28,7 @@ export const portfolio_items = [
     },
     {
         id:3,
+        type:'web',
         title: 'Pickup Game Finder',
         desc: 'Pickup Game Finder is a website to help people organize' +
             ' pickup basketball and other sports games in their community. Using' +
@@ -41,6 +44,7 @@ export const portfolio_items = [
     ,
     {
         id:4,
+        type:'web',
         title: 'Harvest Dashboard',
         desc: 'Harvest Dashboard is a website that gives farmers tools to easily track the progress of their fields through real time graphs, analytics, and predictions . Our goal is to give growers information to improve their harvests and plan for future harvests.',
         img: require('../images/harvest_dashboard.jpg'),
@@ -63,12 +67,25 @@ export const portfolio_items = [
     ,
     {
         id:5,
+        type:'web',
         title: 'Trump Tweets',
         desc: 'Trump Tweets is a website that displays random images and' +
             'tweets of Donald Trump using the Ghetty Images API and Twitter API.',
         img: require('../images/trump-tweets.jpg'),
         chips: ['JavaScript', 'HTML5','CSS','Angular','Node.js', 'Twitter API', 'Firebase', 'Heroku', 'REST API', 'Spring Boot'],
         link: 'https://trump-tweets-bdagg.herokuapp.com/'
+    }
+    ,
+    {
+        id:6,
+        type:'other',
+        title: 'CPU Stress Test',
+        desc: 'A windows desktop application that stress tests your CPU for stable overclocks.' +
+            'Using C# Management API, the program detects the users CPU core count' +
+            'then runs a prime number calculation algorithm on all cores.',
+        img: require('../images/stress-test.gif'),
+        chips: ['.NET', 'C#'],
+        link: 'https://github.com/BenjaminDagg/CPU_Stress_Test'
     }
 
 ];

@@ -1,0 +1,12 @@
+#TechPage {
+    position: relative;
+    float: left;
+    text-align: left;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.tech-info {
+    width: 400px;
+    text-align: left;
+}

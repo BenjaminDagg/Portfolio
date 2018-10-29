@@ -53,13 +53,13 @@ export class SideMenu extends Component {
                     <button onClick={this.toggleAboutMenu} className="menu-btn-main">About</button>
                     {this.state.aboutMenuShowing &&
                         <div id="about-submenu" className="submenu">
-                            <a href={"/about#edu"}>
+                            <a href={"/about/education"}>
                                 <button className="menu-btn-sub">Education</button>
                             </a>
-                            <a href="/about#work">
+                            <a href="/about/work">
                                 <button className="menu-btn-sub">Work Experience</button>
                             </a>
-                            <a href={"/about#work"}>
+                            <a href={"/about/tech"}>
                                 <button className="menu-btn-sub">Technology/Languages</button>
                             </a>
                         </div>
@@ -71,7 +71,9 @@ export class SideMenu extends Component {
                             <a href={"/portfolio/web"}>
                                 <button className="menu-btn-sub">Websites</button>
                             </a>
-                            <button className="menu-btn-sub">Other</button>
+                            <a href={"/portfolio/other"}>
+                                <button className="menu-btn-sub">Other</button>
+                            </a>
 
                         </div>
                     }

@@ -1,0 +1,25 @@
+#EduPage {
+    position: relative;
+    float: left;
+    text-align: left;
+    margin-top: 50px;
+    width: 50%;
+}
+
+#EduPage p {
+    text-align: left;
+    position: relative;
+    float:left;
+    width: 60%;
+}
+
+.header {
+    text-align:left;
+}
+
+#csumb-logo {
+    position:relative;
+    float: right;
+    width: 200px;
+    height:200px;
+}

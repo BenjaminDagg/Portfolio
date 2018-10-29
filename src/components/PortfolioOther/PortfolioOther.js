@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import "./PortfolioWeb.css";
-import {PortfolioItem} from "../PortfolioItem/PortfolioItem";
+import "./PortfolioOther.css";
 import {portfolio_items} from "../../portfolio_items/portfolio_items";
+import {PortfolioItem} from "../PortfolioItem/PortfolioItem";
 
-export class PortfolioWeb extends Component {
+export class PortfolioOther extends Component {
 
     constructor(props) {
         super(props);
@@ -15,7 +15,7 @@ export class PortfolioWeb extends Component {
         var list = [];
 
         for (var i = 0; i < portfolio_items.length;i++) {
-            if (portfolio_items[i].type == 'web') {
+            if (portfolio_items[i].type == 'other') {
                 list.push(
                     <PortfolioItem name={portfolio_items[i].title}
                                    imgUrl={portfolio_items[i].img}
@@ -34,7 +34,7 @@ export class PortfolioWeb extends Component {
         var items = this.createList();
 
         return (
-            <div id="PortfolioWeb">
+            <div id="PortfolioOther">
                 {items}
             </div>
         );
