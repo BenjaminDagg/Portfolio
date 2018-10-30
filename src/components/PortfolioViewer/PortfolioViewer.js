@@ -39,6 +39,19 @@ export class PortfolioViewer extends Component {
 
                 }
                 {this.state.item &&
+                <div id="port-content">
+                    <p className="item-desc">{this.state.item.desc}</p>
+                    <br />
+                    {this.state.item.github &&
+                        <a className="item-link" href={this.state.item.github}>GitHub Page</a>
+                    }
+                    <br />
+                    {this.state.item.url &&
+                        <a className="item-link" href={this.state.item.url}>Link to Site</a>
+                    }
+                </div>
+                }
+                {this.state.item &&
                     <ImageScroller images={this.state.item.images}/>
                 }
             </div>

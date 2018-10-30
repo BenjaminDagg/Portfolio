@@ -12,22 +12,27 @@ import {Header} from "../Header/Header";
 import {PortfolioViewer} from "../PortfolioViewer/PortfolioViewer";
 import {TechPage} from "../TechPage/TechPage";
 import {PortfolioOther} from "../PortfolioOther/PortfolioOther";
+import Paper from '@material-ui/core/Paper';
+import {ContactPage} from "../ContactPage/ContactPage";
 
 export class Content extends Component {
     render() {
         return (
             <div id="MainContent">
-                <Router>
-                    <div>
-                        <Route exact={true} path="/about" component={AboutPage}/>
-                        <Route path="/portfolio/web" component={PortfolioWeb}/>
-                        <Route path="/portfolio/other" component={PortfolioOther}/>
-                        <Route path="/portfolio/:id" component={PortfolioViewer}/>
-                        <Route path="/about/education" component={EduPage}/>
-                        <Route path="/about/work" component={WorkPage}/>
-                        <Route path="/about/tech" component={TechPage}/>
-                    </div>
-                </Router>
+                <Paper elevation={4}>
+                    <Router>
+                        <div>
+                            <Route path="/contact" component={ContactPage}/>
+                            <Route path="/portfolio/web" component={PortfolioWeb}/>
+                            <Route path="/portfolio/other" component={PortfolioOther}/>
+                            <Route path="/portfolio/:id" component={PortfolioViewer}/>
+                            <Route path="/about/education" component={EduPage}/>
+                            <Route path="/about/work" component={WorkPage}/>
+                            <Route path="/about/tech" component={TechPage}/>
+
+                        </div>
+                    </Router>
+                </Paper>
             </div>
         );
     }

@@ -5,15 +5,13 @@
 }
 
 #prev-btn {
-    position:absolute;
-    left: 0;
-    bottom: 0;
+    position:relative;
+    float:right;
 }
 
 #next-btn {
-    position:absolute;
-    right:0;
-    bottom: 0;
+    position:relative;
+    float:left;
 }
 
 .scroll-btn {
@@ -27,5 +25,21 @@
 
 .image-scroller {
     position:relative;
-    width:100%;
+
+
+}
+
+.left {
+    position:relative;
+    float:left;
+    width: 24%;
+    height: 100%;
+
+}
+
+.right {
+    position:relative;
+    float:right;
+    width: 24%;
+
 }

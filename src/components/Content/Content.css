@@ -1,8 +1,8 @@
 #MainContent {
-    width: 70%;
+    width: 100%;
     position:absolute;
-    right: 20px;
-    top: 200px;
+    left: 205px;
+    top: 170px;
     height: 100%;
     padding: 20px;
 

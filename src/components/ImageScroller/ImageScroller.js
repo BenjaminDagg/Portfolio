@@ -44,7 +44,18 @@ export class ImageScroller extends Component {
         return (
             <div class="image-scroller">
                 <img class="scrollable-image" src={this.state.images[this.state.index]} />
-                <button class="scroll-btn" id="prev-btn" onClick={this.decrement}>Prev</button><button class="scroll-btn" id="next-btn" onClick={this.increment}>Next</button>
+
+                {this.state.images.length > 1 &&
+                    <div className="left">
+                        <button className="scroll-btn" id="prev-btn" onClick={this.decrement}>Prev</button>
+                    </div>
+                }
+                {this.state.images.length > 1 &&
+                 <div className="right">
+                    <button className="scroll-btn" id="next-btn" onClick={this.increment}>Next</button>
+                </div>
+                }
+
             </div>
         );
     }

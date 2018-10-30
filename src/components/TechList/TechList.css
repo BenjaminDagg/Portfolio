@@ -1,0 +1,14 @@
+.list  {
+    width: 75%;
+    height: 100%;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 220px);
+    grid-auto-flow:row;
+    grid-auto-rows: 200px;
+    float:left;
+}
+
+.tech-list h3 {
+    text-align: left;
+}

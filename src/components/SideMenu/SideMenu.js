@@ -6,14 +6,25 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
+import Toolbar from '@material-ui/core/Toolbar';
+import AppBar from '@material-ui/core/AppBar';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
+import classNames from 'classnames';
 
-const styles = theme => ({
+const styles = {
     root: {
-        ...theme.mixins.gutters(),
-        paddingTop: theme.spacing.unit * 2,
-        paddingBottom: theme.spacing.unit * 2,
+        background: '#ffffff'
+
     },
-});
+};
+
+function ListItemLink(props) {
+    return <ListItem button component="a" {...props} />;
+}
+
 
 
 export class SideMenu extends Component {
@@ -49,42 +60,62 @@ export class SideMenu extends Component {
     render() {
         return (
             <div id="SideMenu">
-                <Paper style={{'padding': '3px'}} elevation={1}>
-                    <button onClick={this.toggleAboutMenu} className="menu-btn-main">About</button>
-                    {this.state.aboutMenuShowing &&
-                        <div id="about-submenu" className="submenu">
-                            <a href={"/about/education"}>
-                                <button className="menu-btn-sub">Education</button>
-                            </a>
-                            <a href="/about/work">
-                                <button className="menu-btn-sub">Work Experience</button>
-                            </a>
-                            <a href={"/about/tech"}>
-                                <button className="menu-btn-sub">Technology/Languages</button>
-                            </a>
-                        </div>
-                    }
+                <Paper className={classNames(styles.root)} elevation={1}>
+                    <AppBar  position="relative" color="default">
+                        <Toolbar>
+                            <Typography variant="h6" color="primary" classes={styles.list_item}>
+                                About
+                            </Typography>
 
-                    <button onClick={this.togglePrtfolioMenu} className="menu-btn-main">Portfolio</button>
-                    {this.state.portfolioIsOpen &&
-                        <div id="about-submenu" className="submenu">
-                            <a href={"/portfolio/web"}>
-                                <button className="menu-btn-sub">Websites</button>
+                        </Toolbar>
+                        <List component="nav">
+                            <a class="button-link" href="/about/education">
+                                <ListItem button>
+                                    <ListItemText primary="Education"/>
+                                </ListItem>
                             </a>
-                            <a href={"/portfolio/other"}>
-                                <button className="menu-btn-sub">Other</button>
+                            <a class="button-link" href="/about/work">
+                                <ListItem button>
+                                    <ListItemText primary="Work Experience"/>
+                                </ListItem>
+                            </a>
+                            <a className="button-link" href="/about/tech">
+                                <ListItem button>
+                                    <ListItemText primary="Technology"/>
+                                </ListItem>
+                            </a>
+                        </List>
+                        <Toolbar>
+                            <Typography variant="h6" color="primary">
+                                Portfolio
+                            </Typography>
+                        </Toolbar>
+                        <List component="nav">
+                            <a className="button-link" href="/portfolio/web">
+                                <ListItem button>
+                                    <ListItemText primary="Websites"/>
+                                </ListItem>
+                            </a>
+                            <a className="button-link" href="/portfolio/other">
+                                <ListItem button>
+                                    <ListItemText primary="Other"/>
+                                </ListItem>
+                            </a>
+                        </List>
+                        <Toolbar>
+                            <Typography variant="h6" color="primary">
+                                Contact
+                            </Typography>
+                        </Toolbar>
+                        <List component="nav">
+                            <a className="button-link" href="/contact">
+                                <ListItem button>
+                                    <ListItemText primary="Contact Me"/>
+                                </ListItem>
                             </a>
 
-                        </div>
-                    }
-                    <button onClick={this.toggleContact} className="menu-btn-main">Contact</button>
-                    {this.state.contactOpen &&
-                        <div id="about-submenu" className="submenu">
-                            <button className="menu-btn-sub">Websites</button>
-                            <button className="menu-btn-sub">Other</button>
-
-                        </div>
-                    }
+                        </List>
+                    </AppBar>
                 </Paper>
             </div>
         );

@@ -2,6 +2,10 @@
     height: 400px;
     width: 600px;
     position: relative;
+    margin: 0 auto;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    margin-top: 5px;
 
 
 }
@@ -9,9 +13,10 @@
 .item-img {
     position:relative;
     float: left;
-    width: 200px;
+    width: 250px;
     height: 200px;
     margin-right: 10px;
+    margin-left: 10px;
 }
 
 .item-info {
@@ -25,12 +30,14 @@
     float:left;
     width: 50%;
     text-align: left;
+
 }
 
 
 
 .portf-title {
     text-align: left;
+    margin-left: 10px;
 }
 
 .chip-container {

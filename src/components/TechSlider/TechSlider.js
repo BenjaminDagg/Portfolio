@@ -6,11 +6,13 @@ export class TechSlider extends Component {
 
         return (
             <div class="tech-slider" id={this.props.name}>
-                <span class="tech-slider-title">{this.props.name}</span>
-                <div class="slider-container">
-                    <span class="beg-span">Beginner</span><span class="exp-span">Expert</span>
-                    <input type="range" value={this.props.value} class="tech-input" min="1" max="100" readonly/>
+                <div class="name-container">
+                    <h3 className="tech-slider-header">{this.props.name}</h3>
                 </div>
+                <div class="desc-container">
+                    <p>{this.props.desc}</p>
+                </div>
+
             </div>
         );
     }

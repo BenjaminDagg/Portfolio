@@ -1,15 +1,12 @@
-#WorkPage {
-    position: relative;
-    float: left;
-    text-align: left;
-    margin-top: 50px;
-    width: 100%;
-}
 
-#WorkPage ul {
-    width: 50%;
-}
+
+
 
 .job-header {
     font-weight: normal;
+}
+
+#workContainer {
+    width:100%;
+    height: 518px;
 }

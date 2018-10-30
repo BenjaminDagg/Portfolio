@@ -9,7 +9,14 @@ export const portfolio_items = [
             'dislike ratio',
         img: require('../images/better_youtube.jpg'),
         chips: ['JavaScript', 'HTML5','CSS','React', 'YouTube API', 'Heroku'],
-        link: 'https://better-youtube.herokuapp.com/'
+        link: '/portfolio/1',
+        url: 'https://better-youtube.herokuapp.com/',
+        github: 'https://github.com/BenjaminDagg/Better_Youtube',
+        images: [require('../images/better_youtube.jpg'),
+                 require('../images/byt2.jpg'),
+                 require('../images/byt3.jpg'),
+                 require('../images/byt4.jpg'),
+                ]
     },
     {
         id:2,
@@ -24,7 +31,16 @@ export const portfolio_items = [
         img: require('../images/draw-with-me.gif'),
         chips: ['JavaScript', 'HTML5','CSS','React','Node.js',
                 'socket.io', 'Heroku'],
-        link: 'https://draw-with-me-dagg.herokuapp.com/'
+        link: '/portfolio/2',
+        url: 'https://draw-with-me-dagg.herokuapp.com/',
+        github: 'https://github.com/BenjaminDagg/DrawWithMe',
+        images: [
+            require('../images/draw-with-me.gif'),
+            require('../images/dwm1.jpg'),
+            require('../images/dwm2.jpg'),
+            require('../images/dwm3.jpg'),
+            require('../images/dwm4.jpg'),
+        ]
     },
     {
         id:3,
@@ -32,14 +48,18 @@ export const portfolio_items = [
         title: 'Pickup Game Finder',
         desc: 'Pickup Game Finder is a website to help people organize' +
             ' pickup basketball and other sports games in their community. Using' +
-            'Google Maos API, users can place markers on a map of their city where' +
-            'they would like to organize a game. Other users can chose to join that' +
-            'event or create their own. The website also includes a built in team organizer with' +
-            'a ranking and tournament system. Includes a realtime chat room to facilitate' +
-            'organizing games.',
+            ' Google Maps API, users can place markers on a map of their city where' +
+            ' they would like to organize a game. Other users can chose to join that' +
+            'event or create their own game.',
         img: require('../images/pgf.jpg'),
         chips: ['JavaScript', 'HTML5','CSS','Angular','Node.js', 'Google Maps API', 'Firebase', 'Heroku'],
-        link: 'https://cst438-group-jabb.herokuapp.com/'
+        link: '/portfolio/3',
+        github: 'https://github.com/BenjaminDagg/PickupGameFinder',
+        url: 'https://cst438-group-jabb.herokuapp.com/',
+        images:[
+            require('../images/pgf.jpg')
+
+        ]
     }
     ,
     {
@@ -50,6 +70,7 @@ export const portfolio_items = [
         img: require('../images/harvest_dashboard.jpg'),
         chips: ['JavaScript', 'HTML5','CSS','React','Node.js', 'REST API','Mocha', 'Chai','D3.js','socket.io'],
         link: '/portfolio/4',
+        github: 'https://github.com/BenjaminDagg/HarvestDashboard',
         images: [
             require('../images/HarvestDashboard/analytics-page1.jpg'),
             require('../images/HarvestDashboard/analytics-page2.jpg'),
@@ -73,7 +94,10 @@ export const portfolio_items = [
             'tweets of Donald Trump using the Ghetty Images API and Twitter API.',
         img: require('../images/trump-tweets.jpg'),
         chips: ['JavaScript', 'HTML5','CSS','Angular','Node.js', 'Twitter API', 'Firebase', 'Heroku', 'REST API', 'Spring Boot'],
-        link: 'https://trump-tweets-bdagg.herokuapp.com/'
+        link: '/portfolio/5',
+        images:[require('../images/trump-tweets.jpg')],
+        url:'https://trump-tweets-bdagg.herokuapp.com/',
+        github: 'https://github.com/BenjaminDagg/TrumpTweets'
     }
     ,
     {
@@ -85,7 +109,25 @@ export const portfolio_items = [
             'then runs a prime number calculation algorithm on all cores.',
         img: require('../images/stress-test.gif'),
         chips: ['.NET', 'C#'],
-        link: 'https://github.com/BenjaminDagg/CPU_Stress_Test'
+        link: '/portfolio/6',
+        github: 'https://github.com/BenjaminDagg/CPU_Stress_Test',
+        images: [require('../images/stress-test.gif')]
+    }
+    ,
+    {
+        id:7,
+        type:'other',
+        title: 'Gaming Macros',
+        desc: 'A windows desktop application that lets you AFK in computer' +
+            ' games by simulating keypresses in a loop. Tested on Destiny 2',
+        img: require('../images/macro-demo.gif'),
+        chips: ['.NET', 'C#', 'SQLite'],
+        link: '/portfolio/7',
+        github: 'https://github.com/BenjaminDagg/Macros',
+        images: [
+            require('../images/macro-demo.gif'),
+            require('../images/macros.jpg')
+        ]
     }
 
 ];

@@ -4,6 +4,7 @@
     text-align: left;
     margin-top: 50px;
     width: 50%;
+    background-color:blue;
 }
 
 #EduPage p {
@@ -15,6 +16,7 @@
 
 .header {
     text-align:left;
+    margin-left: 10px;
 }
 
 #csumb-logo {
@@ -22,4 +24,12 @@
     float: right;
     width: 200px;
     height:200px;
+    margin-right: 50px;
+
+}
+
+#ec {
+    width: 100%;
+    height: 518px;
+
 }
