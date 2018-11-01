@@ -25,25 +25,53 @@ export class ContactLinks extends Component {
 
         this.toggleEmail = this.toggleEmail.bind(this);
         this.togglePhone = this.togglePhone.bind(this);
+        this.handleClick = this.handleClick.bind(this);
     }
 
     toggleEmail(event) {
 
+        //if other popper is displayed then hide it
+        if (!this.state.emailOpen) {
+            this.setState({phoneOpen: false});
+        }
+
         const { target } = event;
         this.setState({
             emailAnchor: target,
-            emailOpen: !this.state.emailOpen
+            emailOpen: !this.state.emailOpen,
+
         });
+
+
 
        return target;
     }
 
     togglePhone(event) {
+
+        //if other popper is displayed then hide it
+        if (!this.state.phoneOpen) {
+            this.setState({emailOpen: false});
+        }
+
         const { target } = event;
         this.setState({
             phoneAnchor: target,
             phoneOpen: !this.state.phoneOpen
         });
+    }
+
+
+    handleClick() {
+
+        //close poppers that are still open
+        if (this.state.emailOpen) {
+            this.setState({emailOpen:false});
+        }
+
+        if (this.state.phoneOpen) {
+            this.setState({phoneOpen:false});
+        }
     }
 
     render() {
@@ -54,8 +82,8 @@ export class ContactLinks extends Component {
         var phoneId = this.state.phoneOpen ? 'phone-popper' : null;
 
         return (
-            <div class="contact-links">
-                <img aria-describedby={id} variant="contained" onClick={this.toggleEmail} className="contact-icon" src={require("../../images/email.svg")}/>
+            <div class="contact-links" onClick={this.handleClick}>
+                <img title="Email Address" aria-describedby={id} variant="contained" onClick={this.toggleEmail} on className="contact-icon" src={require("../../images/email.svg")}/>
                 <Popper open={emailOpen} anchorEl={emailAnchor} transition>
                     {({ TransitionProps }) => (
                         <Fade {...TransitionProps} timeout={350}>
@@ -66,7 +94,7 @@ export class ContactLinks extends Component {
                     )}
                 </Popper>
 
-                <img aria-describedby={phoneId} variant="contained" onClick={this.togglePhone} className="contact-icon" src={require("../../images/phone.svg")}/>
+                <img title="Phone Number" aria-describedby={phoneId} variant="contained" onClick={this.togglePhone} className="contact-icon" src={require("../../images/phone.svg")}/>
                 <Popper open={phoneOpen} anchorEl={phoneAnchor} transition>
                     {({ TransitionProps }) => (
                         <Fade {...TransitionProps} timeout={350}>
@@ -77,10 +105,10 @@ export class ContactLinks extends Component {
                     )}
                 </Popper>
                 <a href="https://github.com/BenjaminDagg">
-                    <img  className="contact-icon" src={require("../../images/github.svg")}/>
+                    <img title="GitHub Profile"  className="contact-icon" src={require("../../images/github.svg")}/>
                 </a>
                 <a class="icon-link" href="https://www.linkedin.com/in/benjamin-dagg-863926168/">
-                    <span className="contact-icon">in</span>
+                    <span title="LinkedIn Profile" className="contact-icon">in</span>
                 </a>
             </div>
         );
