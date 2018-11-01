@@ -66,9 +66,7 @@ export const tech = [
         name:'Java',
         type:'Mobile',
         value: 50,
-        desc: 'Experience using Java for\\n\' +\n' +
-            '            \'                    Android app development and creating Windows application\\n\' +\n' +
-            '            \'                    using JavaFX.'
+        desc: 'Experience using Java for Android app development and creating Windows applications using JavaFX.'
     },
     {
         name: 'Python',

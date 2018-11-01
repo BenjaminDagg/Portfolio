@@ -23,8 +23,8 @@ export const portfolio_items = [
         type:'web',
         title: 'Draw With Me',
         desc: 'Draw With Me is a website to draw and' +
-            'chat with your friends in real time. Using' +
-            'a socket server, users can collaborate to ' +
+            ' chat with your friends in real time. Using' +
+            ' a socket server, users can collaborate to ' +
             'draw images with a variety of brushes, colors,' +
             'and shapes. On arrival users can either create a room' +
             ' or join a friends room to begin chatting and drawing.',
@@ -49,7 +49,7 @@ export const portfolio_items = [
         desc: 'Pickup Game Finder is a website to help people organize' +
             ' pickup basketball and other sports games in their community. Using' +
             ' Google Maps API, users can place markers on a map of their city where' +
-            ' they would like to organize a game. Other users can chose to join that' +
+            ' they would like to organize a game. Other users can choose to join that' +
             'event or create their own game.',
         img: require('../images/pgf.jpg'),
         chips: ['JavaScript', 'HTML5','CSS','Angular','Node.js', 'Google Maps API', 'Firebase', 'Heroku'],
