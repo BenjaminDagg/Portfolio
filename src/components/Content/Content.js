@@ -14,6 +14,7 @@ import {TechPage} from "../TechPage/TechPage";
 import {PortfolioOther} from "../PortfolioOther/PortfolioOther";
 import Paper from '@material-ui/core/Paper';
 import {ContactPage} from "../ContactPage/ContactPage";
+import {Home} from "../Home/Home";
 
 export class Content extends Component {
     render() {
@@ -22,6 +23,7 @@ export class Content extends Component {
                 <Paper elevation={4}>
                     <Router>
                         <div>
+                            <Route exact={true} path="/" component={Home}/>
                             <Route path="/contact" component={ContactPage}/>
                             <Route path="/portfolio/web" component={PortfolioWeb}/>
                             <Route path="/portfolio/other" component={PortfolioOther}/>

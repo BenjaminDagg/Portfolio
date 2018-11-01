@@ -1,0 +1,20 @@
+#Home {
+    width:100%;
+    height: 518px;
+    padding-left: 20px;
+    position:relative;
+}
+
+#Home h1 {
+    text-align:left;
+}
+
+#Home  p {
+    width: 400px;
+    text-align:left;
+}
+
+#home-links {
+    position:absolute;
+    bottom: 50px;
+}
