@@ -13,9 +13,7 @@ export class Header extends Component {
 
                 </div>
                 <h3 id="name-header">Benjamin Dagg</h3>
-                <div id="header-links">
-                    <ContactLinks/>
-                </div>
+
             </div>
         );
     }
