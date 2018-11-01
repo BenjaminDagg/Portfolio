@@ -106,7 +106,7 @@ export const portfolio_items = [
         title: 'CPU Stress Test',
         desc: 'A windows desktop application that stress tests your CPU for stable overclocks.' +
             'Using C# Management API, the program detects the users CPU core count' +
-            'then runs a prime number calculation algorithm on all cores.',
+            ' then runs a prime number calculation algorithm on all cores.',
         img: require('../images/stress-test.gif'),
         chips: ['.NET', 'C#'],
         link: '/portfolio/6',
