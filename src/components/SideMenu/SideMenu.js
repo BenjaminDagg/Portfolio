@@ -63,6 +63,14 @@ export class SideMenu extends Component {
                 <Paper className={classNames(styles.root)} elevation={1}>
                     <AppBar  position="relative" color="default">
                         <Toolbar>
+                            <a className="button-link" href="/">
+                                <Typography variant="h6" color="primary" classes={styles.list_item}>
+                                    Home
+                                </Typography>
+                            </a>
+                        </Toolbar>
+                        <Toolbar>
+
                             <Typography variant="h6" color="primary" classes={styles.list_item}>
                                 About
                             </Typography>
