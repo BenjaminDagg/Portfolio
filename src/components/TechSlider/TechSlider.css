@@ -16,6 +16,9 @@
 
 .tech-slider-header {
     color: white;
+    position: absolute;
+    top: -15px;
+    left: 30px;
 }
 
 .name-container {
@@ -30,6 +33,7 @@
     width: 200px;
     height: 140px;
     position:absolute;
-    top: 24px;
+    top: 32px;
+    padding: 3px;
 }
 
