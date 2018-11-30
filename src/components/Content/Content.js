@@ -15,26 +15,27 @@ import {PortfolioOther} from "../PortfolioOther/PortfolioOther";
 import Paper from '@material-ui/core/Paper';
 import {ContactPage} from "../ContactPage/ContactPage";
 import {Home} from "../Home/Home";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {Footer} from "../Footer/Footer";
 
 export class Content extends Component {
     render() {
         return (
-            <div id="MainContent">
-                <Paper elevation={4}>
-                    <Router>
-                        <div>
-                            <Route exact={true} path="/" component={Home}/>
-                            <Route path="/contact" component={ContactPage}/>
-                            <Route path="/portfolio/web" component={PortfolioWeb}/>
-                            <Route path="/portfolio/other" component={PortfolioOther}/>
-                            <Route path="/portfolio/:id" component={PortfolioViewer}/>
-                            <Route path="/about/education" component={EduPage}/>
-                            <Route path="/about/work" component={WorkPage}/>
-                            <Route path="/about/tech" component={TechPage}/>
+            <div id="content">
+                <Router>
+                    <div>
+                        <Route exact={true} path="/" component={Home}/>
+                        <Route path="/contact" component={ContactPage}/>
+                        <Route path="/portfolio/web" component={PortfolioWeb}/>
+                        <Route path="/portfolio/other" component={PortfolioOther}/>
+                        <Route path="/portfolio/:id" component={PortfolioViewer}/>
+                        <Route path="/about/education" component={EduPage}/>
+                        <Route path="/about/work" component={WorkPage}/>
+                        <Route path="/about/tech" component={TechPage}/>
 
-                        </div>
-                    </Router>
-                </Paper>
+                    </div>
+                </Router>
+
             </div>
         );
     }

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import "./PortfolioViewer.css";
 import {portfolio_items} from "../../portfolio_items/portfolio_items";
 import {ImageScroller} from "../ImageScroller/ImageScroller";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import $ from 'jquery'
 
 export class PortfolioViewer extends Component {
 
@@ -11,6 +13,10 @@ export class PortfolioViewer extends Component {
         this.state = {
             item: null
         };
+
+        this.renderCarouselItems = this.renderCarouselItems.bind(this);
+        this.nextSlide = this.nextSlide.bind(this);
+        this.prevSlide = this.prevSlide.bind(this);
     }
 
     componentDidMount() {
@@ -31,9 +37,58 @@ export class PortfolioViewer extends Component {
         }
     }
 
+
+    renderCarouselItems() {
+        if (!this.state.item) {
+            return;
+        }
+        else {
+            console.log('in');
+            var item = this.state.item;
+            var carouselSlides = [];
+            console.log(item);
+            for (var i = 0; i < item.images.length;i++) {
+
+                if (i  == 0) {
+                    carouselSlides.push(
+
+                        <div className="carousel-item active">
+                            <img className="d-block w-100"
+                                 src={item.images[i]} />
+                        </div>
+                    )
+                }
+                else {
+                    carouselSlides.push(
+
+                        <div className="carousel-item">
+                            <img className="d-block w-100"
+                                 src={item.images[i]} />
+                        </div>
+                    )
+                }
+
+            }
+            console.log(carouselSlides);
+            return carouselSlides;
+        }
+    }
+
+    nextSlide() {
+        //$('#carouselExampleControls').carousel('next');
+    }
+
+    prevSlide() {
+        //$('#carouselExampleControls').carousel('prev');
+    }
+
     render() {
+
+        var carouselItems = this.renderCarouselItems();
+
+
         return (
-            <div id="PortfolioViewer">
+            <div className="container">
                 {this.state.item &&
                     <h3>{this.state.item.title}</h3>
 
@@ -51,11 +106,16 @@ export class PortfolioViewer extends Component {
                     }
                 </div>
                 }
-                {this.state.item &&
+                <div className="row justify-content-center">
+                    {this.state.item &&
                     <ImageScroller images={this.state.item.images}/>
-                }
+                    }
+                </div>
             </div>
         );
+
+
+
     }
 }
 

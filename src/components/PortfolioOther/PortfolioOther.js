@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import "./PortfolioOther.css";
 import {portfolio_items} from "../../portfolio_items/portfolio_items";
 import {PortfolioItem} from "../PortfolioItem/PortfolioItem";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export class PortfolioOther extends Component {
 
@@ -34,8 +35,10 @@ export class PortfolioOther extends Component {
         var items = this.createList();
 
         return (
-            <div id="PortfolioOther">
-                {items}
+            <div style={{'padding':'20px','width':'75%'}} className="container-fluid">
+                <div className="row justify-content-center">
+                    {items}
+                </div>
             </div>
         );
     }

@@ -1,9 +1,9 @@
-#MainContent {
+#content {
     width: 100%;
     position:absolute;
-    left: 205px;
-    top: 170px;
+    left:0;
+    top: 300px;
     height: 100%;
-    padding: 20px;
+    min-height: 100%;
 
 }

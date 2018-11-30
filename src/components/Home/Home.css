@@ -9,12 +9,15 @@
     text-align:left;
 }
 
-#Home  p {
-    width: 400px;
+#home-content {
+    width: 75%;
     text-align:left;
+    position:relative;
+    margin: 0 auto;
 }
 
 #home-links {
-    position:absolute;
-    bottom: 50px;
+    width: 400px;
+    margin: 0 auto;
+    position:relative;
 }

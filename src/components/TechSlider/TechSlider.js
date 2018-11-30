@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import "./TechSlider.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export class TechSlider extends Component {
     render() {

@@ -15,7 +15,7 @@ app.get('*', (req, res)=>{
 });
 
 //dev
-//app.listen(process.env.PORT || 8080 ,() => console.log('server listening'));
+//app.listen(process.env.PORT || 3000 ,() => console.log('server listening'));
 
 //deployment
 http.listen(process.env.PORT || 8080 ,() => console.log('server listening'));
