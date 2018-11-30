@@ -64,7 +64,7 @@ export class Header extends Component {
                 <button onClick={this.toggleSideBar} ref="sidebar-toggle" className="navbar-toggler" type="button" id="sidebar-toggle-btn">☰</button>
                 <div id="sidebar-navigation" style={{'text-align':'left'}} ref="sidebar" className={this.state.sidebarOpen ? 'navbar-side-open' : 'navbar-side-close'}>
                     <button onClick={this.toggleSideBar} id="sidebar-close">X</button>
-                    <nav className="nav flex-column">
+                    <nav id="sidebarnav" className="nav flex-column">
                         <a className="nav-link" href="/">Home</a>
                         <a href="/about/education" className="nav-link">Education</a>
                         <a href="/about/work" className="nav-link">Work</a>

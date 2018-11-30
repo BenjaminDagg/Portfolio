@@ -9,7 +9,7 @@
 
 .navbar-side-open {
     position:fixed;
-    top:200px;
+    top:0px;
     left:0px;
     width: 200px;
     height:100vh;
@@ -25,6 +25,11 @@
     animation-name: sidemenuOpen;
     animation-duration: 1s;
 
+}
+
+#sidebarnav {
+    position:relative;
+    top: 200px;
 }
 
 .navbar-side-close {
@@ -49,7 +54,7 @@
 
 #sidebar-close {
     position:absolute;
-    top: 10px;
+    top: 200px;
     right: 10px;
     background-color: #323233;
     color:white;
@@ -118,7 +123,7 @@
     background-color: #3c5375;
     position:absolute;
     bottom: 10px;
-    left: 10px;
+    right: 30px;
     display:none;
 }
 
