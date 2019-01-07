@@ -31,7 +31,7 @@ export class Header extends Component {
         return (
             <div id="header">
                 <div id="avatar">
-                    <Avatar id="profile_img" alt="Ben Dagg" src={require("../../images/profile_img.webp")} />
+                    <Avatar id="profile_img" alt="Ben Dagg" src={require("../../images/pi2.JPG")} />
 
                 </div>
                 <h3 id="name-header">Benjamin Dagg</h3>
