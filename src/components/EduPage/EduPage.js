@@ -25,7 +25,7 @@ export class EduPage extends Component {
                             University Monterey Bay(CSUMB) in May of 2018 with Cum Laude
                             Honors. He earned a Bachelor's of Science degree in Computer
                             Science and Information Technology with a concentration in software
-                            engineering. His overall GPA while attending CSUMB was 3.6 out of 4.0.
+                            engineering. His overall GPA while attending CSUMB was 3.6.
                         </p>
                         <br/>
 
