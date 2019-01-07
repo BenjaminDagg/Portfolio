@@ -13,6 +13,24 @@ export class WorkPage extends Component {
                 </div>
                 <div style={{'text-align':'left'}} className="row">
                     <div className="col-12">
+                        <h4>Web Developer Intern</h4>
+                    </div>
+                    <div className="col-12">
+                        <ul>
+                            <li>
+                                Tatum Games
+                            </li>
+                            <li>
+                                Oct, 2018 - Feb, 2019
+                            </li>
+                            <li>
+                                Interned at Tatum Games mobile game company. Responsible for maintaining and creating content for company website
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div style={{'text-align':'left'}} className="row">
+                    <div className="col-12">
                         <h4>Ride Operator</h4>
                     </div>
                     <div className="col-12">
@@ -63,11 +81,12 @@ export class WorkPage extends Component {
                             <li>
                                 Volunteered at a non-profit computer repair shop
                                 in Salinas, CA. Responsible for refurbishing computers, testing hardware, customer tech
-                                suppor
+                                support
                             </li>
                         </ul>
                     </div>
                 </div>
+
             </div>
         );
     }

@@ -35,7 +35,7 @@ export class PortfolioWeb extends Component {
         var items = this.createList();
 
         return (
-            <div style={{'padding':'20px','width':'75%'}} className="container-fluid">
+            <div style={{'padding':'20px','width':'75%','text-align':'center'}} className="container-fluid">
                 <div className="row justify-content-center">
                     {items}
                 </div>

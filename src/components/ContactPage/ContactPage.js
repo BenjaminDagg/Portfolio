@@ -53,9 +53,12 @@ export class ContactPage extends Component {
                     </div>
                 </div>
                 <div className="row justify-content-center">
+
                     <div className="col-12 col-md-6 justify-content-start justify-content-md-end">
                         <div className="contactItem">
+                            <a className="contactURL" href="https://github.com/BenjaminDagg">
                             <img src={require('../../images/github.svg')} /><span>github.com/BenjaminDagg</span>
+                            </a>
                         </div>
                     </div>
 
@@ -63,7 +66,9 @@ export class ContactPage extends Component {
                 <div className="row justify-content-center">
                     <div className="col-12 col-md-6 justify-content-start justify-content-md-end">
                         <div className="contactItem">
+                            <a className="contactURL" href="https://www.linkedin.com/in/benjamin-dagg-863926168/">
                             <img  src={require('../../images/lin.png')} /><span>linkedin.com/in/benjamin-dagg</span>
+                            </a>
                         </div>
                     </div>
                 </div>
