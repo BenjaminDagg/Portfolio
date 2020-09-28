@@ -19,25 +19,37 @@ export class EduPage extends Component {
 
                     </div>
                     <div className="col-12 col-md-6">
-                        <h3>Education</h3>
-                        <p style={{'text-align':'left','width':'100%','margin':'5px'}}>
-                            Benjamin Dagg graduated from California State
-                            University Monterey Bay(CSUMB) in May of 2018 with Cum Laude
-                            Honors. He earned a Bachelor's of Science degree in Computer
-                            Science and Information Technology with a concentration in software
-                            engineering. His overall GPA while attending CSUMB was 3.6.
-                        </p>
-                        <br/>
-
-                        <p style={{'text-align':'left','width':'100%','margin':'5px'}}>
-                            Benjamin Dagg's Computer Science coursework includes
-                            Operating Systems, Data Structures, Computer Architecture,
-                            Calculus I, Algorithms, Discrete Math, Computer Networking, Software Engineering,
-                            Software Design, Game Development, IOS Development, and Web Development
-                        </p>
+                        
+                        <ul className="edu-list" id="school-list">
+                        <h3 style={{'text-align':'center'}}>Education</h3>
+                            <li>
+                                <strong>Bachelor's of Science - Computer Science and Information Technology</strong>
+                                <ul>
+                                    <li>
+                                        California State University Monterey Bay (CSUMB)
+                                    </li>
+                                    <li>Graduated with Cum Laude Honors</li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
+                    
 
                 </div>
+                <div className="row justify-content-center">
+                        <div className="col-12 col-md-5 order-2 order-md-1">
+                            <h3>Certifications</h3>
+                            <ul className="edu-list">
+                                <li>
+                                    <strong>Comptia A+ Certification</strong> - Computer technician and IT professional Certification
+                                    covering computers, software, hardware, operating systems, troubleshooting, and information security
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="col-12 col-md-5 order-md-2 order-1">
+                            <img id="comptia-logo" src={require("../../images/comptiaimg.jpg")}/>
+                        </div>
+                    </div>
 
             </div>
         );

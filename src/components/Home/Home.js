@@ -19,7 +19,7 @@ export class Home extends Component {
                     <div className="col-12">
                         <div id="home-content">
                             <p>
-                                Welcome! My name is Ben Dagg. I am a Computer Science graduate and an aspiring software engineer. Here you can find information on my
+                                Welcome to my portfolio website. My name is Ben Dagg I am a Computer Science graduate and an aspiring IT professional. Here you can find information on my
                                 background as a programmer as well as samples of various websites
                                 and projects I have worked on. Please feel free to contact me with
                                 questions regarding my background.
