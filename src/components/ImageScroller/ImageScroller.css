@@ -1,0 +1,123 @@
+/*
+.scrollable-image {
+    position:relative;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#prev-btn {
+    position:relative;
+    float:right;
+}
+
+#next-btn {
+    position:relative;
+    float:left;
+}
+
+.scroll-btn {
+    width: 60px;
+    height: 30px;
+    background-color: #3c5375;
+    color:white;
+    border:1px solid #3c5375;
+    border-radius: 8px;
+
+}
+
+.image-scroller {
+    position:relative;
+
+
+}
+
+.left {
+    position:relative;
+    float:left;
+    width: 24%;
+    height: 100%;
+
+}
+
+.right {
+    position:relative;
+    float:right;
+    width: 24%;
+
+}
+*/
+.scrollable-image {
+    position:relative;
+    width: 100%;
+    height:100%;
+
+}
+
+#prev-btn {
+    top:50%;
+    left:10px;
+}
+
+#next-btn {
+    top:50%;
+    right:10px;
+}
+
+.scroll-btn {
+    width: 60px;
+    height: 30px;
+    background-color: #3c5375;
+    color:white;
+    border:1px solid #3c5375;
+    border-radius: 8px;
+    position:absolute;
+}
+
+.image-scroller {
+    position:relative;
+    width: 100%;
+    height: 100%;
+    max-width: 75%;
+    max-height: 500px;
+
+}
+
+#image-inspector {
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    background-color:rgba(0, 0, 0, .5);
+
+}
+
+.image-open {
+  display:block;
+}
+
+.image-closed {
+    display:none
+}
+
+.inspected-image {
+    position:relative;
+    top: 25%;
+    width: 100%;
+    height: 500px;
+    max-height: 50%;
+    max-height: 500px;
+    opacity:1.0;
+}
+
+.lightbox-close {
+    position:relative;
+    width: 100px;
+    height: 50px;
+    margin: 0 auto;
+    top: 15%;
+    background-color:rgba(0, 0, 0, .5);
+    border: 1px solid white;
+    color:white;
+}
+

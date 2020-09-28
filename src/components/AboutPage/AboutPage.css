@@ -1,0 +1,49 @@
+#AboutPage {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.about-section {
+    position: relative;
+    float: left;
+    text-align: left;
+    margin-top: 50px;
+    width: 100%;
+
+}
+
+#work ul {
+    width: 50%;
+}
+
+#edu {
+    width: 50%;
+}
+
+#edu p {
+    text-align: left;
+    position: relative;
+    float:left;
+    width: 60%;
+}
+
+.header {
+    text-align:left;
+}
+
+#csumb-logo {
+    position:relative;
+    float: right;
+    width: 200px;
+    height:200px;
+}
+
+
+
+.tech-info {
+    width: 400px;
+    text-align: left;
+}
+

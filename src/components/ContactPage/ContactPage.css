@@ -1,0 +1,123 @@
+#ContactPage {
+    width: 100%;
+    height: 574px;
+    margin-top: 15px;
+}
+
+#contactContent {
+    position:relative;
+    width: 530px;
+    margin: 0 auto;
+
+    vertical-align: center;
+    height: 100px;
+    top: 50%;
+}
+
+#phoneContacts {
+    position:relative;
+    width: 47%;
+    float:left;
+    border-right: 1px solid black;
+}
+
+.contactContainer {
+    height: 30px;
+    width: 100%;
+    position:relative;
+
+}
+
+.contactContainer2 {
+    height: 30px;
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+
+.contactContainer img {
+    height: 30px;
+    width: 30px;
+    position:relative;
+    margin-left: 10px;
+    float:right;
+}
+
+.contactContainer span {
+
+    position:relative;
+    float:right;
+}
+
+.contactContainer2 img {
+    height: 30px;
+    width: 30px;
+    position:relative;
+    margin-right: 10px;
+    float:left;
+}
+
+.contactContainer2 span {
+
+    position:relative;
+    float:left;
+}
+
+#socialContacts {
+    position:relative;
+    width: 50%;
+    float:right;
+
+
+}
+
+.contactContainer2 {
+    height:30px;
+    width:100%;
+    margin-top: 2px;
+}
+
+
+
+#inLogo {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+@media only screen and (max-width:784px) {
+    .contact-container span {
+        float:left;
+    }
+
+    .contact-container img {
+        float:left;
+    }
+
+    .contact-container {
+        float:left;
+    }
+}
+
+.contactItem {
+    height:30px;
+    width: 100%;
+    margin-top:10px;
+}
+
+.contactItem img {
+    height: 30px;
+    width: 30px;
+    position:relative;
+    margin-right: 10px;
+    float:left;
+}
+
+.contactItem span {
+    position:relative;
+    float:left;
+}
+
+.contactURL {
+    color: black;
+}

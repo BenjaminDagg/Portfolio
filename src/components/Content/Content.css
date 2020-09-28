@@ -1,0 +1,9 @@
+#content {
+    width: 100%;
+    position:absolute;
+    left:0;
+    top: 300px;
+    height: 100%;
+    min-height: 100%;
+
+}

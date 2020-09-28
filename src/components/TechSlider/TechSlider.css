@@ -1,0 +1,39 @@
+.tech-slider {
+    width: 200px;
+    height: 180px;
+    border: 1px solid #3c5375;
+    border-radius: 4px;
+    position:relative;
+}
+
+.tech-slider p {
+    text-align: left;
+    font-size: 12px;
+    width: 100%;
+    height: 140px;
+    vertical-align: center;
+}
+
+.tech-slider-header {
+    color: white;
+    position: absolute;
+    top: -15px;
+    left: 30px;
+}
+
+.name-container {
+    width: 200px;
+    height: 40px;
+    background-color: #3c5375;
+    position:absolute;
+    top: 0;
+}
+
+.desc-container {
+    width: 200px;
+    height: 140px;
+    position:absolute;
+    top: 32px;
+    padding: 3px;
+}
+

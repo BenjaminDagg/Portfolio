@@ -1,0 +1,23 @@
+#Home {
+    width:100%;
+    height: 574px;
+    padding-left: 20px;
+    position:relative;
+}
+
+#Home h1 {
+    text-align:left;
+}
+
+#home-content {
+    width: 75%;
+    text-align:left;
+    position:relative;
+    margin: 0 auto;
+}
+
+#home-links {
+    width: 400px;
+    margin: 0 auto;
+    position:relative;
+}
